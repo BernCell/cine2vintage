@@ -33,7 +33,7 @@
     },
 
     {
-      "src": "screenshots/screenshot4-desktop.png",
+      "src": "screenshots/screenshot2-desktop.png",
       "sizes": "1920x1080",
       "type": "image/png",
       "platform": "wide"
@@ -41,13 +41,13 @@
 
     {
       "src": "screenshots/screenshot1-mobile.png",
-      "sizes": "533x999",
+      "sizes": "500x1072",
       "type": "image/png",
       "platform": "mobile"
     },
     {
       "src": "screenshots/screenshot2-mobile.png",
-      "sizes": "721x987",
+      "sizes": "800x1280",
       "type": "image/png",
       "platform": "mobile"
     }
