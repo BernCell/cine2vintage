@@ -8,25 +8,16 @@ const urlsToCache = [
     '/icons/icon-512x512.png',
 ];
 
-// Cache des ressources lors de l'installation
+// Installation du service worker
 self.addEventListener('install', (event) => {
     event.waitUntil(
         caches.open(CACHE_NAME).then((cache) => {
-            return cache.addAll(urlsToCache);
+            return cache.addAll(CACHE_URLS);
         })
     );
 });
 
-// Interception des requêtes et retour de la version en cache si disponible
-self.addEventListener('fetch', (event) => {
-    event.respondWith(
-        caches.match(event.request).then((response) => {
-            return response || fetch(event.request);
-        })
-    );
-});
-
-// Mise à jour du cache lors de l'activation
+// Activation du service worker
 self.addEventListener('activate', (event) => {
     const cacheWhitelist = [CACHE_NAME];
     event.waitUntil(
@@ -38,6 +29,18 @@ self.addEventListener('activate', (event) => {
                     }
                 })
             );
+        })
+    );
+});
+
+// Fetch (recherche et récupération des ressources dans le cache)
+self.addEventListener('fetch', (event) => {
+    event.respondWith(
+        caches.match(event.request).then((cachedResponse) => {
+            if (cachedResponse) {
+                return cachedResponse;
+            }
+            return fetch(event.request);
         })
     );
 });
