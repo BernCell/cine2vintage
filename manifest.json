@@ -1,8 +1,8 @@
 {
-    "short_name": "cine2vintage",
+    "short_name": "Cine2Vintage",
     "name": "Mon Cine-2 Vintage",
     "description": "Une application qui répertorie surtout les films anciens",
-    "start_url": "/",
+    "start_url": ".",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#4CAF50",
