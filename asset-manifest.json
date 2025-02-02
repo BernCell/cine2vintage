@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/cine2vintage/static/css/main.ea319704.css",
-    "main.js": "/cine2vintage/static/js/main.207513e2.js",
+    "main.js": "/cine2vintage/static/js/main.43682b95.js",
     "static/media/Poppins-Light.ttf": "/cine2vintage/static/media/Poppins-Light.be86c23ccc9cb2e1f4f1.ttf",
     "static/media/Poppins-Regular.ttf": "/cine2vintage/static/media/Poppins-Regular.1c701c9a6b587802e3d0.ttf",
     "index.html": "/cine2vintage/index.html",
     "main.ea319704.css.map": "/cine2vintage/static/css/main.ea319704.css.map",
-    "main.207513e2.js.map": "/cine2vintage/static/js/main.207513e2.js.map"
+    "main.43682b95.js.map": "/cine2vintage/static/js/main.43682b95.js.map"
   },
   "entrypoints": [
     "static/css/main.ea319704.css",
-    "static/js/main.207513e2.js"
+    "static/js/main.43682b95.js"
   ]
 }
